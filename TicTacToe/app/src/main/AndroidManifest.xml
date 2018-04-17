@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.tictactoe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/xando"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/xando_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SinglePlayerProfile" />
+        <activity android:name=".MultiPlayerProfile" />
+        <activity
+            android:name=".SinglePlayerGameX"
+            android:label="@string/title_activity_single_player_game"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MultiPlayerGame"
+            android:label="@string/title_activity_multi_player_game"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+           android:name=".FinalResults"/>
+        <activity
+            android:name=".MainActivity5x5"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MultiPlayerGame5x5"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".SinglePlayerGameO" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

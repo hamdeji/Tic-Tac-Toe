@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/title_back_beta"
+    tools:context="com.example.android.tictactoe.FinalResults">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_text"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:textColor="#1bc704"
+        android:textSize="40sp"
+        android:layout_marginBottom="50dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/p1name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:fontFamily="serif"
+                android:text="@string/player_1_default_name"
+                android:textColor="#ffff00"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/Drawee"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Draw"
+                android:textAlignment="center"
+                android:textColor="#ffff00"
+                android:textSize="30sp"
+                android:fontFamily="serif"/>
+            <TextView
+                android:id="@+id/p2name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/player_2_default_name"
+                android:textAlignment="center"
+                android:textColor="#ffff00"
+                android:textSize="30sp"
+                android:fontFamily="serif"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/p1wins"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/initial_games_played_0"
+                android:textAlignment="center"
+                android:textColor="#ffff00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/draws"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/initial_games_played_0"
+                android:textAlignment="center"
+                android:textColor="#ffff00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/p2wins"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/initial_games_played_0"
+                android:textAlignment="center"
+                android:textColor="#ffff00"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#20861c"
+        android:layout_gravity="center"
+        android:onClick="onClickContinue"
+        android:padding="4dp"
+        android:text="@string/continue_button_text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</LinearLayout>
+

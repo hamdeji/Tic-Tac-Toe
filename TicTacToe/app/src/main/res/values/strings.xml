@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="multi_player_option">Multi player</string>
+    <string name="single_player_option">Single Player</string>
+    <string name="default_max_games">100</string>
+    <string name="default_min_games">1</string>
+    <string name="player_1_default_name">Player 1</string>
+    <string name="player_2_default_name">Player 2</string>
+    <string name="title_activity_single_player_game">SinglePlayerGame</string>
+    <string name="title_activity_multi_player_game">MultiPlayerGame</string>
+    <string name="default_player_turn_text">Player 1\'s turn (X)</string>
+    <string name="restart_game_button_text">Restart Game</string>
+    <string name="restart_match_button_text">Restart Match</string>
+    <string name="single_player_name">ID:</string>
+    <string name="result_text">RESULT</string>
+    <string name="initial_games_played_0">0</string>
+    <string name="continue_button_text">PLAY AGAIN</string>
+</resources>

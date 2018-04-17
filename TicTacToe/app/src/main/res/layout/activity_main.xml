@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/title_back_beta"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="TIC TAC TOE"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="56sp" />
+
+    <Button
+        android:id="@+id/singleplayer"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#47843f"
+        android:onClick="SinglePGame"
+        android:padding="10dp"
+        android:text="@string/single_player_option"
+        android:textColor="#fcfdfc"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/twoplayer"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#47843f"
+        android:onClick="MultiPGame"
+        android:padding="10dp"
+        android:text="@string/multi_player_option"
+        android:textColor="#fcfdfc"
+        android:textSize="40sp" />
+
+
+</LinearLayout>

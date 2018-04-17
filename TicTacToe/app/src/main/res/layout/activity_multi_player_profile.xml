@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    tools:context="com.example.android.tictactoe.SinglePlayerProfile"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#000000"
+        tools:context="com.example.android.tic_tac_toe.PlayerName">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:text="Player 1 ID (X):"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:hint="Name"
+            android:textColor="#af051f"
+            android:textColorHint="#660007"
+            android:backgroundTint="#006666"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:text="Player 2 ID (O):"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:hint="Name"
+            android:textColor="#af051f"
+            android:textColorHint="#660007"
+            android:backgroundTint="#006666"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Grid Size:"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.9">
+
+            <RadioButton
+                android:id="@+id/Mg3x3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/darker_gray"
+                android:checked="true"
+                android:shadowColor="#ffffff"
+                android:text="3x3"
+                android:textColor="#af051f"
+                android:layout_marginBottom="20dp"/>
+            <RadioButton
+                android:id="@+id/Mg5x5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/darker_gray"
+                android:checked="false"
+                android:shadowColor="#ffffff"
+                android:text="5x5"
+                android:textColor="#af051f" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Number of Games:"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/numberOfMG"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:hint="Number of Games"
+            android:inputType="number"
+            android:textColor="#af051f"
+            android:textColorHint="#660007"
+            android:backgroundTint="#006666"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:layout_gravity="center"
+            android:text="START GAME"
+            android:background="#2e8c41"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:onClick="submitName"
+            android:layout_marginBottom="16dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
+
