@@ -115,7 +115,7 @@ public class SinglePlayerGameX extends AppCompatActivity {
             flagEndGame = 1;
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
-                    newGame(new View(getApplicationContext()));
+                    resetGame(new View(getApplicationContext()));
                     if (counter == number) {
                         Intent intent = new Intent(getApplicationContext(), FinalResults.class);
                         intent.putExtra("Player 1 Wins", player1Win);
@@ -169,7 +169,7 @@ public class SinglePlayerGameX extends AppCompatActivity {
                             }
 
                         } else {
-                            newGame(new View(getApplicationContext()));
+                            resetGame(new View(getApplicationContext()));
                         }
                     }
 
@@ -372,7 +372,7 @@ public class SinglePlayerGameX extends AppCompatActivity {
         return (sum) / ((double) counter);
     }
 
-    public void newGame(View view) {
+    public void resetGame(View view) {
 
         win = 0;
         gamover = 0;

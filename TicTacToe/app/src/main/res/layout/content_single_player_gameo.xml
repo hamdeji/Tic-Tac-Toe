@@ -238,7 +238,7 @@
                 android:onClick="resetGame"
                 android:background="#2d3fa1"
                 android:textColor="#ffffff"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="16dp"
                 android:padding="4dp"
 
@@ -249,7 +249,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="16dp"
-                android:layout_marginStart="48dp"
+                android:layout_marginStart="40dp"
                 android:background="#2d3fa1"
                 android:onClick="newMatch"
                 android:padding="4dp"
